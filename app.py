@@ -1,0 +1,10 @@
+print("starting flask....")
+
+from flask import flask,request, render_template
+
+
+app = Flask (__name__)
+
+@app.route("/",methods=["GET","POST"])
+def index(): 
+    render_template("index.html")
